@@ -33,7 +33,7 @@ export const prepareCart = (cart, lang: string, config): CartModel => {
 
   const shippingTypeCheck = cartLangItems.find((item) => item.shipingCostType === shippingTypes[1]);
   const shippingType = shippingTypeCheck ? shippingTypes[1] : shippingTypes[0];
-  const shippingByLang = config[lang] && config[lang].shippingCost && config[lang].shippingCost[shippingType]
+  const shippingByLang = config && config[lang] && config[lang].shippingCost && config[lang].shippingCost[shippingType]
     ? config[lang].shippingCost[shippingType]
     : shippingCost[lang][shippingType];
   const shippingTypeCost = totalPrice >= shippingByLang.limit ? 0 : shippingByLang.cost;
@@ -41,6 +41,7 @@ export const prepareCart = (cart, lang: string, config): CartModel => {
   return {
     items: cartLangItems,
     shippingCost: totalPrice ? shippingTypeCost : 0,
+    shippingLimit: shippingByLang.limit,
     shippingType: totalPrice ? (shippingTypeCost ? shippingType : 'free') : '',
     totalPrice: totalPrice ? totalPrice + shippingTypeCost : totalPrice,
     totalQty,
