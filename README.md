@@ -1,6 +1,5 @@
 ![MEAN](https://res.cloudinary.com/dnpgh1vhi/image/upload/v1615640124/logo1_gvrmpd.svg) 
 
-# Eshop template
 ![Lines of code](https://img.shields.io/tokei/lines/github/pararell/eshop_mean)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pararell/eshop_mean)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/pararell/eshop_mean)
