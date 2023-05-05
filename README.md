@@ -13,14 +13,6 @@
 - Typescript stack with decorators, use MongoDB and mongoose schemas, JWT Passport
 - Theming with css variables
 
-![eshop-mean](https://res.cloudinary.com/dnpgh1vhi/image/upload/v1629725636/eshop-mean.png)
-
-## Test it
-- smrtic.eu - dashboard test - email: test@miroslavsmrtic.sk , password: test123456
-- more info in blog [https://miroslavsmrtic.sk/blogs](https://miroslavsmrtic.sk/blogs)
-
-<img alt="eshop-mean setup" src="https://res.cloudinary.com/dnpgh1vhi/image/upload/v1629726575/Isometric_illustration_design_concept_loading_and_maintenance_process_kjtxck.jpg" height="200" style="margin: 0; padding: 0;">
-
 ## Installation 
 
 One package.json contain now all neccessary for Nest and Angular, so server-side rendering with Angular is possible
